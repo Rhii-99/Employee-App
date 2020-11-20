@@ -1,0 +1,8 @@
+<div class="container-fluid">
+  <h1 style="text-align: center;">Welcome to Employee App!</h1>
+
+  <app-emp-form (onSubmitted)="onFormSubmit($event)"></app-emp-form>
+<hr>
+<app-manager [managerDetail]="manager"></app-manager><hr>
+<app-developer [developerDetail]="developer"></app-developer><hr>
+<app-designer [designerDetail]="designer"></app-designer>

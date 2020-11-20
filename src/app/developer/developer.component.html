@@ -1,0 +1,21 @@
+
+<table>
+    <thead>
+        <tr>Developer Table</tr>
+    </thead><br>
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th> 
+        <th>Contact No</th>
+        <th>Salary</th>
+        <th>Role Type</th>
+      </tr>
+      <tr *ngFor="let developerdetail of developerDetail" [ngStyle]="{color: getColor(developerdetail.salary)}">
+        <td>{{developerdetail.fname}}</td>
+        <td>{{developerdetail.lname}}</td>
+        <td>{{developerdetail.contact}}</td>
+        <td>{{developerdetail.salary}}</td>
+        <td>{{developerdetail.roleType}}</td>
+      </tr>
+</table>
+

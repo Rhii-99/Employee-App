@@ -1,0 +1,22 @@
+
+<table>
+    <thead>
+        <tr>Designer Table</tr>
+    </thead><br>
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th> 
+        <th>Contact No</th>
+        <th>Salary</th>
+        <th>Role Type</th>
+      </tr>
+      <tr *ngFor="let designerdetail of designerDetail" [ngStyle]="{color: getColor(designerdetail.salary)}">
+        <td>{{designerdetail.fname}}</td>
+        <td>{{designerdetail.lname}}</td>
+        <td>{{designerdetail.contact}}</td>
+        <td>{{designerdetail.salary}}</td>
+        <td>{{designerdetail.roleType}}</td>
+      </tr>
+</table>
+
+

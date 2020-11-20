@@ -1,0 +1,21 @@
+
+{{managerDetail}}
+<table>
+    <thead>
+        <tr>Manager Table</tr>
+    </thead><br>
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th> 
+        <th>Contact No</th>
+        <th>Salary</th>
+        <th>Role Type</th>
+      </tr>
+      <tr *ngFor="let managerdetail of managerDetail" [ngStyle]="{color: getColor(managerdetail.salary)}">
+        <td>{{managerdetail.fname}}</td>
+        <td>{{managerdetail.lname}}</td>
+        <td>{{managerdetail.contact}}</td>
+        <td>{{managerdetail.salary}}</td>
+        <td>{{managerdetail.roleType}}</td>
+      </tr>
+</table>
